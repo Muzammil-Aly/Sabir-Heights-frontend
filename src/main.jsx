@@ -6,7 +6,7 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import SignUp from "./components/auth/Signup.jsx";
 import SignIn from "./components/auth/SignIn.jsx";
-import AllUsers from "./pages/Allusers.jsx";
+import AllUsers from "./pages/AllUsers.jsx";
 import Home from "./components/Home/pages/Home.jsx";
 import { ApiProvider } from "./components/ContextProvider/ApiContext.jsx";
 import AccountInfo from "./components/Header/AccountInfo.jsx";
