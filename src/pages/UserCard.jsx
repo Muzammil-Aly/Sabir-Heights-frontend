@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const UserCard = ({ user }) => {
   if (!user)
@@ -12,10 +12,7 @@ const UserCard = ({ user }) => {
   const { _id, avatar, email, phone, fullName } = user;
 
   return (
-    <Link
-      to={`/userPost/${_id}`}
-      className="flex items-center gap-4 bg-[#fefcf8] border border-[#7b3f00] rounded-md px-4 py-3 shadow-sm hover:bg-[#f7f1e8] transition w-full"
-    >
+    <div className="flex items-center gap-4 bg-[#fefcf8] border border-[#7b3f00] rounded-md px-4 py-3 shadow-sm hover:bg-[#f7f1e8] transition w-full">
       {/* Small Avatar */}
       <img
         src={avatar}
@@ -33,7 +30,7 @@ const UserCard = ({ user }) => {
           <span className="text-[#7b3f00] font-medium">Phone:</span> {phone}
         </p>
       </div>
-    </Link>
+    </div>
   );
 };
 
